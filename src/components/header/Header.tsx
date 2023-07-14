@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../../public/Logo .webp";
+import Logo from "../../../public/Logo.webp";
 import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -10,16 +10,16 @@ const Header = () => {
       <Image src={Logo} alt="Logo" className="w-48" />{" "}
       <ul className="flex gap-x-6">
         <li className="text-sm  lg:text-lg">
-          <Link href={"./"}>Female</Link>
+          <Link href={"/category/female"}>Female</Link>
+         </li>
+        <li className="text-sm  lg:text-lg">
+          <Link href={"/category/male"}>Male</Link>
         </li>
         <li className="text-sm  lg:text-lg">
-          <Link href={"./"}>Male</Link>
+          <Link href={"/category/kids"}>Kids</Link>
         </li>
         <li className="text-sm  lg:text-lg">
-          <Link href={"./"}>Kids</Link>
-        </li>
-        <li className="text-sm  lg:text-lg">
-          <Link href={"./"}>All Product</Link>
+          <Link href={"/products"}>All Product</Link>
         </li>
       </ul>
       <Input
