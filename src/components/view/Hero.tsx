@@ -22,7 +22,7 @@ const Hero = () => {
           him with a problem: the kingdom was running out of money.
         </p>
         <div className="flex  justify-center lg:justify-start">
-          <Button className=" w-2/3 h-12  mt-4 px-8 rounded-lg    bg-black text-white sm:w-1/2 lg:w-1/2">
+          <Button className=" w-2/3 h-12  mt-4 px-4 rounded-lg    bg-black text-white sm:w-1/2 lg:w-2/3 xl:w-1/2">
             Start Shopping
           </Button>{" "}
         </div>

@@ -5,8 +5,10 @@ const ProductCard = () => {
   const productlimit = Products.slice(0, 3);
   return (
     <>
-      <h2 className="text-4xl text-center my-9   text-gray-500 font-bold">Check What We Have</h2>
-      <div className="flex    justify-center   flex-wrap gap-5 ">
+      <h2 className="text-center mt-24 mb-16 font-bold text-xl sm:text-3xl md:text-4xl">
+        Check What We Have
+      </h2>
+      <div className="flex    justify-center   flex-wrap gap-5 transition-all ease-linearm ">
         {productlimit.map((product) => (
           <div key={product.id}>
             <Product
