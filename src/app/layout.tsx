@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"px-0 md:px-8"}>
+      <body className={"grid  grid-rows-[auto,1fr,auto] px-0 md:px-8"}>
         <Header />
         <main  className={inter.className}> {children}</main>
         <Footer />

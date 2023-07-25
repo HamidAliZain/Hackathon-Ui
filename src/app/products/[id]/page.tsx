@@ -18,8 +18,8 @@ const productDetailedPage = ({ params }: { params: { id: number } }) => {
               key={product.id}
               className="bg-zinc-100 flex flex-col justify-center gap-y-5 py-4  mx-6  px-4 md:flex-row md:gap-x-5   "
             >
-              <div className="flex gap-x-2 flex-col-reverse md:flex-row   gap-y-3">
-                <div className=" flex flex-row flex-wrap gap-x-3  gap-y-3 md:flex-col ">
+              <div className="flex gap-x-2 flex-col-reverse md:flex-row   gap-y-3    ">
+                <div className=" flex flex-row flex-wrap gap-x-3  gap-y-3 md:flex-col justify-center    items-center sm:justify-start">
                   <Image
                     src={product.img}
                     alt={product.name}
@@ -73,7 +73,12 @@ const productDetailedPage = ({ params }: { params: { id: number } }) => {
                   <Quantity />
                 </div>{" "}
                 <div className="flex items-center gap-x-3 mt-4">
-                  <AddToCart />
+                  <AddToCart
+                    prname={product.name}
+                    price={product.price}
+                    id={product.id}
+                    img={product.img}
+                  />
                   <h4 className="text-2xl font-bold">$ {product.price}</h4>
                 </div>{" "}
               </div>
