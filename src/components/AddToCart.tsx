@@ -11,8 +11,8 @@ const AddToCart = (props: {
   function chekin() {
     const p = { name: props.prname };
     setAddProduc([...addProduc, p]);
-    console.log(addProduc);
   }
+  console.log(addProduc);
   return (
     <button
       onClick={chekin}

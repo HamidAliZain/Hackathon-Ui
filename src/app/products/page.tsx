@@ -1,4 +1,4 @@
-import Product from "@/components/view/ProductList";
+import Product from "@/components/ProductList";
 import { Products } from "@/utils/mock";
 import { StaticImageData } from "next/image";
 

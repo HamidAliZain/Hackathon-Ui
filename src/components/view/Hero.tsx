@@ -2,10 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import HeroImage from "/public/hero.webp";
-import Brand1 from "/public/brand1.webp";
-import Brand2 from "/public/brand2.webp";
-import Brand3 from "/public/brand3.webp";
-import Brand4 from "/public/brand4.webp";
+ 
 const Hero = () => {
   return (
     <section className="flex flex-col gap-y-10  justify-between  items-center lg:flex-row">
@@ -26,12 +23,7 @@ const Hero = () => {
             Start Shopping
           </Button>{" "}
         </div>
-        <div className="flex  gap-6 justify-center lg:justify-start  flex-wrap mt-8">
-          <Image src={Brand1} alt="brand1" />
-          <Image src={Brand2} alt="brand1" />
-          <Image src={Brand3} alt="brand1" />
-          <Image src={Brand4} alt="brand1" />
-        </div>
+       
       </div>
       <div className="hidden  relative justify-center items-center  lg:flex">
         <div className=" w-[620px]  h-[620px] -z-10 rounded-full bgpink absolute bottom-0"></div>

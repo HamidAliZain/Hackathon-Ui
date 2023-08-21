@@ -1,6 +1,5 @@
 import AddToCart from "@/components/AddToCart";
 import { Quantity } from "@/components/Quantity";
-import Product from "@/components/view/ProductList";
 import { Products } from "@/utils/mock";
 import Image, { StaticImageData } from "next/image";
 const getProductCategory = (id: number) => {
@@ -9,7 +8,7 @@ const getProductCategory = (id: number) => {
 const productDetailedPage = ({ params }: { params: { id: number } }) => {
   const result = getProductCategory(params.id);
   const sizes = ["xs", "sm", "md", "lg", "xl"];
-  return (
+  return (   
     <>
       {result.map((product) => {
         return (
